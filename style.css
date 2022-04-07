@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(221, 221, 221);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+  height: auto;
+  background: transparent;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.item {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  font-size: 120px;
+  line-height: 100px;
+  font-family: sans-serif;
+
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  background: #78bdc4;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hover-x::before {
+  content: "x";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  font-size: 100px;
+  line-height: 150px;
+  font-family: sans-serif;
+
+  color: #96a0ac;
+  background: #4c6272;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.hover-x:hover::before {
+  opacity: 1;
+}
+
+.hover-o::before {
+  content: "o";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  font-size: 120px;
+  line-height: 150px;
+  font-family: sans-serif;
+
+  color: #96a0ac;
+  background: #4c6272;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.hover-o:hover::before {
+  opacity: 1;
+}
+
+.act-x {
+  background: #dd6859;
+}
+
+.act-o {
+  background: #eeaf49;
+}
+
+.win {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding-top: 350px;
+  display: none;
+}
+
+.win-tit {
+  font-size: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: sans-serif;
+}
+
+.restart {
+  width: 160px;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  border: none;
+  background: #3e4253;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.restart:hover {
+  background: #333644;
+}
+
+.w {
+  display: block;
+}
